@@ -4,5 +4,4 @@ RUN apk --update --no-cache add bash curl docker openssh-client git python py-pi
     pip install --quiet --no-cache-dir awscli; \
     apk --purge -v del py-pip && rm /var/cache/apk/*
 
-WORKDIR /tmp
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/bash"]
